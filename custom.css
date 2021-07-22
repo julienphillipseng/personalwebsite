@@ -1,0 +1,367 @@
+/* ---------- GENERAL ------------ */
+
+:root {
+  --main-color: #1a1a1a;
+  --acc-color: #212121;
+  --title-color: #28afb0;
+  --text-color: #fff;
+}
+
+.main-color-bg {
+  background-color: var(--main-color);
+}
+
+.acc-color {
+  color: var(--acc-color);
+}
+
+.title-color {
+  color: var(--title-color);
+}
+
+.high-color-1-bg {
+  background-color: var(--high-color-1);
+}
+
+.high-color-2-bg {
+  background-color: var(--high-color-2);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+body,
+html {
+  background-color: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.prim-sh {
+  color: var(--text-color);
+  opacity: 0.15;
+  font-weight: 700;
+  font-size: clamp(3rem, 15vw, 12rem);
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .prim-sh {
+    text-align: center;
+  }
+}
+
+.sec-sh {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+.content {
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.9rem, 0.8vw, 1.1rem);
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* ---------- INTRO HOME PAGE ------------ */
+
+.intro-title {
+  color: var(--text-color);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  letter-spacing: 40%;
+  line-height: 1.1;
+}
+
+.intro-desc {
+  color: var(--text-color);
+  font-size: clamp(1rem, 3vw, 4rem);
+  font-weight: 600;
+}
+
+#homeSection {
+  min-height: 100vh;
+}
+
+/* ---------- NAVBAR ------------ */
+
+#mainNavbar {
+  background-color: var(--main-color);
+}
+
+#mainNavbar .nav-link {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: clamp(1rem, 1vw, 1.1rem);
+}
+
+#mainNavbar .nav-link:hover {
+  color: var(--title-color);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* ---------- ABOUT SECTION ------------ */
+
+.about-subsec {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem 2rem;
+  color: var(--text-color);
+
+  transition: background-color ease 0.4s;
+}
+
+.about-subsec:hover {
+  background-color: var(--title-color);
+}
+
+.about-subtitle {
+  position: relative;
+  top: 3.7vh;
+}
+
+.small-title {
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-size: clamp(0.95rem, 0.8vw, 1.1rem);
+  margin: 1.3rem 0;
+}
+
+hr.solid {
+  border-top: 1px solid #fff;
+  opacity: 1;
+}
+
+/* ---------- EXPERIENCE SECTION ------------ */
+
+.icon {
+  color: var(--title-color);
+  font-size: clamp(3.5rem, 5vw, 5rem);
+}
+
+.specialty-title {
+  font-size: clamp(1.1rem, 1.5vw, 2rem);
+  color: var(--text-color);
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.fill {
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.fill:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .view-proj span {
+    position: absolute;
+    visibility: visible;
+
+    color: var(--text-color);
+    font-size: 0.33rem;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transition: all ease 0.5s;
+  }
+
+  .view-proj:hover span {
+    opacity: 1;
+    transform: scale(3);
+  }
+
+  .full-center {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .view-proj span {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.proj-image {
+  height: clamp(105px, 18em, 350px);
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .proj-image {
+    height: 105px;
+    object-fit: cover;
+  }
+}
+
+.row-shrink {
+  margin-left: 5.4rem;
+  margin-right: 5.4rem;
+}
+
+@media (max-width: 768px) {
+  .row-shrink {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+/* ---------- MODALS SECTION ------------ */
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-close-btn {
+  z-index: 3;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.modal-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* THIS IS TO CHANGE THE CAROUSEL BOTTOM BUTTON INDICATOR COLORS TO BLACK, REMOVE THEM TO GO BACK TO WHITE */
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+
+.modal-title {
+  padding: 1rem 1rem 0 1rem;
+  font-size: clamp(1.3rem, 1.3vw, 1.5rem);
+}
+
+.modal-desc {
+  padding: 0.2rem 1rem 0 1rem;
+  font-size: clamp(0.9rem, 0.8vw, 1rem);
+}
+
+.modal-date {
+  padding: 0.2rem 1rem 0 1rem;
+  font-style: italic;
+  font-size: clamp(0.9rem, 0.8vw, 1rem);
+}
+
+.modal-full-desc {
+  padding: 0.8rem 1rem 1rem 1rem;
+  font-size: clamp(0.9rem, 0.8vw, 1rem);
+}
+
+.modal-tech {
+  text-transform: uppercase;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: clamp(0.8rem, 0.7vw, 0.9rem);
+  color: var(--title-color);
+  letter-spacing: 2px;
+}
+
+.modal-paper {
+  padding: 0.8rem 1rem 1rem 1rem;
+  font-size: clamp(0.9rem, 0.8vw, 1rem);
+  color: var(--title-color);
+}
+
+/* ---------- CONTACT SECTION ------------ */
+
+.link {
+  font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+  color: var(--title-color);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+
+  padding: 0.7rem;
+  vertical-align: middle;
+
+  text-decoration: none;
+
+  border: 2px;
+  border-color: var(--title-color);
+  border-style: solid;
+
+  transition: all ease 0.4s;
+}
+
+.link:hover {
+  background-color: var(--title-color);
+  color: var(--text-color);
+}
+
+.link:hover .contact-icon {
+  color: var(--text-color);
+}
+
+.contact-icon {
+  margin: auto 0;
+  color: var(--title-color);
+  font-size: clamp(1.1rem, 1.2vw, 2rem);
+
+  transition: all ease 0.4s;
+}
+
+.link-text {
+  display: inline-block;
+  padding: 0 0.5rem;
+
+  text-transform: uppercase;
+}
+
+.vert-align {
+  display: grid;
+  place-items: center;
+}
+
+.bg-white-fill {
+  background-color: #fff;
+}
+
+#contactSection {
+  margin-bottom: 7rem;
+}
