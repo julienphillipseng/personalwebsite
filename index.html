@@ -95,7 +95,7 @@
               <div class="about-subsec">
                 <div class="small-title content">PERSONAL PROFILE</div>
                 <div class="content my-4">
-                  Computer engineer with a passion for software development. Well-versed in writing code to create functional, user-friendly and dependable software. Eager learner who adapts quickly to new environments. Team player who enjoys working with others. Confident communicator in English and French, both orally and written.
+                  Computer engineer with a passion for software development. Well-versed in writing code to create functional and dependable software. Eager learner who adapts quickly to new environments. Team player who enjoys working with others. Confident communicator in English and French, both orally and written.
                 </div>
               </div>
             </div>
@@ -212,19 +212,25 @@
                 </div>
               </div>
               <div class="col-5 col-md-3 p-1">
+                <div class="fill view-proj" data-bs-toggle="modal" data-bs-target="#RichduckModal" >
+                  <img src="imgs/richduck.png" alt="" class="img-fluid proj-image"/>
+                  <span class="full-center">View Project</span>
+                </div>
+              </div>
+              <div class="col-5 col-md-3 p-1">
                 <div class="fill view-proj" data-bs-toggle="modal" data-bs-target="#FygoModal" >
                   <img src="imgs/FygoLogo.png" alt="" class="img-fluid proj-image"/>
                   <span class="full-center">View Project</span>
                 </div>
               </div>
+              
+
               <div class="col-5 col-md-3 p-1">
                 <div class="fill view-proj" data-bs-toggle="modal" data-bs-target="#CompVisionModal" >
                   <img src="imgs/CompVisionProj.png" alt="" class="img-fluid proj-image"/>
                   <span class="full-center">View Project</span>
                 </div>
               </div>
-
-
               <div class="col-5 col-md-3 p-1">
                 <div class="fill view-proj" data-bs-toggle="modal" data-bs-target="#MLCovidModal" >
                   <img src="imgs/MachineLearningCovid.png" alt="" class="img-fluid proj-image"/>
@@ -341,6 +347,85 @@
                   in order to determine whether a build version is suitable based on client requirements.
                 </div>
                 <div class="modal-tech">Python, Java, Jenkins, HTML, CSS</div>
+                
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Richduck Modal -->
+      <div
+        class="modal fade"
+        id="RichduckModal"
+        tabindex="-1"
+        aria-labelledby="RichduckModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close modal-close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+              </button>
+              <div id="richduckIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#richduckIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="imgs/richduckLogin.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckDashboard.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckInvestments.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckUpload.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckAdd.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckEditMultiple.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckEditSingle.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imgs/richduckDeleteSingle.png" class="d-block w-100 modal-img" alt="...">
+                  </div>
+                </div>
+              </div> 
+              <div class="modal-info">
+                <div class="modal-title">Web Application for Measuring and Tracking Investment Portfolio Performance</div>
+                <div class="modal-desc">Richduck.ca</div>
+                <div class="modal-date">Sept 2021 - Oct 2021</div>
+                <div class="modal-full-desc">
+                  The goal of this project is to provide users with more valuable insights into their investment portfolio's 
+                  performance than brokerages typically give by default. 
+                  Responsible for end to end development and deployment of the application.
+                  Devised suitable data models for investments and implemented custom user models.
+                  Wrote backend logic using Python within Django framework.
+                  Achieved computation of performance metrics for a user's portfolio.
+                  Designed and built frontend using HTML, CSS and Django's template language.
+                  Successfully deployed application on DigitalOcean Droplet using a PostgreSQL database within a VPC.
+                </div>
+                <a href="https://richduck.ca/" class="modal-paper" target="_blank">Visit Website</a>
+                <div class="modal-tech">Django, Python, Postgres, DigitalOcean, Linux, HTML, CSS</div>
                 
               </div>  
             </div>
